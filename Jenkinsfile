@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('permission') {
             steps {
-		sh 'clean'
                 sh 'chmod 777 script2.sh'
 		sh 'chmod 777 Script1.sh'
 		sh 'echo "permission granted" '
